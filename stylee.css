@@ -1,0 +1,119 @@
+/* Reset CSS cơ bản và cố định font chữ toàn trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 1. Main: Đặt độ rộng 1000px và căn giữa màn hình */
+#main {
+    width: 1000px;
+    margin: 10px auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* 2. Header: Banner / Logo */
+#head {
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 5px;
+}
+
+#head h1 {
+    margin: 0;
+}
+
+/* 3. Header Link: Thanh liên kết đầu trang */
+#head-link {
+    height: 35px;
+    background-color: #333;
+    color: white;
+    line-height: 35px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#head-link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#head-link a:hover {
+    text-decoration: underline;
+}
+
+/* 4. Left: Cột bên trái */
+#left {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #e8f5e9;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+#left ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#left li {
+    margin-bottom: 8px;
+}
+
+#left a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+/* 5. Content: Nội dung chính nằm giữa */
+#content {
+    width: 580px; /* 1000px - 200px (left) - 200px (right) - 20px padding = 580px */
+    min-height: 400px;
+    float: left;
+    background-color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.news-item {
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* 6. Right: Cột bên phải */
+#right {
+    width: 200px;
+    min-height: 400px;
+    float: right;
+    background-color: #e8f5e9;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid #ddd;
+}
+
+/* 7. Footer: Chân trang và Xử lý float (Clearfix) */
+#footer {
+    clear: both; /* Ngăn float từ left, content, right đè lên footer */
+    height: 60px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#footer a {
+    color: #a5d6a7;
+    text-decoration: none;
+}
